@@ -1,0 +1,38 @@
+<!-- <div class="media"> -->
+  <!-- <h3 class="mr-5"> -->
+    <br>
+
+
+
+  <div class="card" style="width: 30rem;">
+    <div class="card-body">
+      <a class="card-title company text-primary" href="{%url 'dashboard:startup' username=post.startup_name.username%} "><strong>{{post.startup_name.username}}</strong></a>
+      <br>
+      <a class="card-text text-muted dept" href="{%url 'dashboard:single' username=post.startup_name.username pk=post.pk %}">{{post.dept}}</a>
+      <br>
+
+      <p class="card-text">{{post.created_at}}</p>
+      {% if user.is_authenticated and post.startup_name == user %}
+
+      {%endif%}
+      </div>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+
+  <!-- <div class="media-body">
+
+      <br>
+
+    <a href="{%url 'dashboard:single' username=post.startup_name.username pk=post.pk %}"><h4>{{post.dept}}</h4></a>
+    {{post.created_at}}
+    <div class="media-footer">
+
+      {% if user.is_authenticated and post.startup_name == user %}
+
+				<a href="{% url 'dashboard:delete' pk=post.pk %}" title="delete" class="btn btn-simple">
+				<span class="fa fa-remove text-danger" aria-hidden="true"></span>
+					<span class="text-danger icon-label">Delete</span>
+				</a>
+			{% endif %}
+    </div>
+</div> -->

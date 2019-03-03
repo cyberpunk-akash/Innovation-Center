@@ -1,0 +1,12 @@
+{% extends "dashboard/dash_base.html" %}
+{% load humanize %}
+
+
+
+{% block post_content %}
+<div class="col-md-8">
+	{% for post in post_list %}
+  {% include "dashboard/_dash.html" %}
+	{% endfor %}
+</div>
+{% endblock %}

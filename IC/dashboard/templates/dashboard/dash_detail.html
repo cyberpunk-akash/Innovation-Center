@@ -1,0 +1,48 @@
+{%extends "dashboard/dash_base.html"%}
+
+{%block post_content%}
+
+<div class="card" style="width: 50rem;">
+  <div class="card-body">
+    <a class="card-title company text-primary" href="{%url 'dashboard:startup' username=post.startup_name.username%} "><strong>{{post.startup_name.username}}</strong></a>
+    <br>
+    <a class="card-text text-muted dept" href="{%url 'dashboard:single' username=post.startup_name.username pk=post.pk %}">{{post.dept}}</a>
+    <br>
+    <br>
+    <h5 class="card-text text">{{post.description|safe}}</h5>
+    <br>
+    <p class="card-text">{{post.created_at}}</p>
+    <br>
+    {% if user.is_authenticated and post.startup_name == user %}
+
+    <a href="{% url 'dashboard:delete' pk=post.pk %}" class="btn btn-danger">Delete offer</a>
+    {%endif%}
+</div>
+</div>
+<!-- <div class="media">
+  <h3 class="mr-5">
+    <br>
+  <a href="{%url 'dashboard:startup' username=post.startup_name.username%} "><strong>{{post.startup_name.username}}</strong></a></h3>
+
+  <div class="media-body">
+
+      <br>
+
+    <a href="{%url 'dashboard:single' username=post.startup_name.username pk=post.pk %}"><h4>{{post.dept}}</h4></a>
+
+
+    {{post.created_at}} -->
+    <!-- <div class="media-footer">
+
+      {% if user.is_authenticated and post.startup_name == user %}
+
+        <a href="{% url 'dashboard:delete' pk=post.pk %}" title="delete" class="btn btn-simple">
+        <span class="fa fa-remove text-danger" aria-hidden="true"></span>
+          <span class="text-danger icon-label">Delete</span>
+        </a>
+      {% endif %}
+    </div> -->
+
+
+
+{%endblock%}

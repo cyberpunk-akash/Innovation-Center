@@ -1,0 +1,40 @@
+.mynav{
+  padding-top:15px;
+
+}
+
+.ic
+{
+/* font-family: 'Libre Baskerville', serif; */
+font-family: 'Patua One', cursive;
+/* background-color: white; */
+
+}
+
+.text
+{
+
+font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+body{
+background-color:#f4f4f4;
+}
+
+.company{
+font-family: 'Pridi', serif;
+font-size:30px;
+}
+
+.dept
+{
+font-family: 'Actor', sans-serif;
+font-size:24px;
+margin-bottom:100px;
+}
+.comp
+{
+font-size:50px;
+font-family: 'Oleo Script', cursive;
+}

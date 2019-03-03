@@ -1,0 +1,17 @@
+{%extends "dashboard/dash_base.html"%}
+
+{%load bootstrap4%}
+{%block post_content%}
+<br>
+<h3 class="text">Create New Post</h3>
+<br>
+<form class="" id="postForm" action="{%url 'dashboard:create' %}"method="POST">
+  {%csrf_token%}
+  {%bootstrap_form form%}
+  {%buttons%}
+  <button type="submit" class="btn btn-primary btn-large" name="button">Post</button>
+  {%endbuttons%}
+</form>
+
+
+{%endblock%}
