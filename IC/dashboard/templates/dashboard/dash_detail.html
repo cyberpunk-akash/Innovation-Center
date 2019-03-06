@@ -9,7 +9,7 @@
     <a class="card-text text-muted dept" href="{%url 'dashboard:single' username=post.startup_name.username pk=post.pk %}">{{post.dept}}</a>
     <br>
     <br>
-    <h5 class="card-text text">{{post.description|safe}}</h5>
+    <h5 class="card-text text">{{post.description|safe|linebreaks}}</h5>
     <br>
     <p class="card-text">{{post.created_at}}</p>
     <br>
