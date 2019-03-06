@@ -9,17 +9,17 @@ Technology Stack:
 HTML, CSS and Bootstrap4 for frontend.
 Python3 and Django2 for backend and server integration.
 
-To using the project, you need to follow these steps after cloning:
+To use the project, you need to follow these steps after cloning:
 1. Install python3 
 2. Install django2
 3. Install a text editor(preferably Atom or Sublime) to view the files.
 4. Install pip
 5. pip install libraries like misaka, django-boostrap4
-6. Go to directory IC while has a file manage.py
+6. Go to directory 'IC' which has a file 'manage.py'
 7. Run 'python manage.py migrate' on the terminal
 8. Run 'python manage.py makemigrations dashboard'
 9. Run 'python manage.py makemigrations accounts'
 10.Run 'python manage.py migrate' again
 11.Run 'python manage.py runserver'
-12.The output of the previous command is an URL, host the URL on your browser, now you use the web application.
+12.The output of the previous command is an URL, copy the URL on your browser and run, now you can use the web application.
 
