@@ -3,7 +3,7 @@ Innovation Center is the technology and business incubator of Manipal Academy of
 
 The project heads can register their team’s account on the website and after logging in to the portal, they can post offers and ask interested students to fill the Google Form which they have provided and thus the students would be contacted for the recruitments later. More features like deleting an offer, searching for all kind of offers provided by a particular company, time when the proposal was posted, etc. are included. 
 
-This is just a basic prototype made by me so that the people concerned may have an idea of how exactly the application would function. We’re planning to form a team of 3 developers to make a full-fledged website based on this idea which is expected to launch by the next academic year.
+This is just a basic prototype made by me so that the people concerned may have an idea of how exactly the application would function. 
  
 Technology Stack:
 HTML, CSS and Bootstrap4 for frontend.
