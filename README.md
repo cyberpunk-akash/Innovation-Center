@@ -5,21 +5,23 @@ The project heads can register their team’s account on the website and after l
 
 This is just a basic prototype made by me so that the people concerned may have an idea of how exactly the application would function. 
  
-Technology Stack:
-HTML, CSS and Bootstrap4 for frontend.
-Python3 and Django2 for backend and server integration.
+## Technology Stack:
+**Frontend**: HTML, CSS, Bootstrap4, Javascript <br/>
+**Backend**: Python3, Django2
 
-To use the project, you need to follow these steps after cloning:
-1. Install python3 
-2. Install django2
-3. Install a text editor(preferably Atom or Sublime) to view the files.
-4. Install pip
-5. pip install libraries like misaka, django-boostrap4
-6. Go to directory 'IC' which has a file 'manage.py'
-7. Run 'python manage.py migrate' on the terminal
-8. Run 'python manage.py makemigrations dashboard'
-9. Run 'python manage.py makemigrations accounts'
-10.Run 'python manage.py migrate' again
-11.Run 'python manage.py runserver'
-12.The output of the previous command is an URL, copy the URL on your browser and run, now you can use the web application.
-
+## How to run the application?
+You need to follow these steps after cloning:
+- Install python3 
+- Install pip
+- Install django2
+- Install a text editor(preferably Atom or Sublime) to view the files.
+- Run `npm install medium-editor` on the command line.
+- Go to directory **blog_project** which has a file **manage.py**
+- Run the following commands:
+```python
+    python manage.py migrate
+    python manage.py makemigrations blog
+    python manage.py migrate
+    python manage.py runserver
+```
+- The output of the last command is an URL, you can use this URL to run the web application on your system locally.
