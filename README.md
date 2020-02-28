@@ -14,13 +14,15 @@ You need to follow these steps after cloning:
 - Install python3 
 - Install pip
 - Install django2
-- Install a text editor(preferably Atom or Sublime) to view the files.
-- Run `npm install medium-editor` on the command line.
-- Go to directory **blog_project** which has a file **manage.py**
+- Install a text editor(preferably Atom or Sublime) to view the files
+- pip install libraries like *misaka*, *django-boostrap4*
+- Run `npm install medium-editor` on the command line
+- Go to directory **IC** which has a file **manage.py**
 - Run the following commands:
 ```python
     python manage.py migrate
-    python manage.py makemigrations blog
+    python manage.py makemigrations dashboard
+    python manage.py makemigrtions accounts
     python manage.py migrate
     python manage.py runserver
 ```
